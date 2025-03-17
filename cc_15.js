@@ -64,6 +64,7 @@ document.getElementById("riskForm").addEventListener("submit", (event) => {
              levelElement.textContent = "Level: High"; // Changing from Medium to High
              card.style.backgroundColor = "#e07575";
          } // High remains unchanged
+         event.stopPropagation(); // Task 6
         });
     });
     
