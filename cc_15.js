@@ -14,3 +14,11 @@ function addRiskItem(riskName, riskLevel, department) {
             <p><strong>Department:</strong> ${department}</p>
                 `;
         }
+
+// Task 3
+const resolveButton = document.createElement("button");
+     resolveButton.textContent = "Resolve";
+     resolveButton.addEventListener("click", (event) => {
+        riskDashboard.removeChild(riskCard); // Adding an event listener for the click event 
+         event.stopPropagation(); // Task 6: Handling Event Propagation
+     });
